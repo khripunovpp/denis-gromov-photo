@@ -1,0 +1,80 @@
+doctype html
+html
+
+	head
+		meta(charset='utf-8')
+		title
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+		link(rel='shortcut icon', href='img/favicon.ico', type='image/x-icon')
+		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Lato:900|Montserrat:300,400,500,600,700|Raleway")
+		link(rel='stylesheet', href='css/style.css')
+		style.
+			*,
+			*::after,
+			*::before {
+				//- outline: 1px solid rgba(255,0,0,.5) !important
+			}
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js")
+
+	body
+		.w-page
+			include _header
+			main.main
+				.main__inner
+					section.main__article
+						article.article
+							header.article__header
+								h1.article__title Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet, consectetur.
+								aside.article__info
+									time(datetime="2019-02-15 15:58:00").article__date 15 февраля, в 15:58
+									p.article__views 152 просмотра
+							img.article__pic(src="img/_DSC41271-2.jpg", alt="Lorem ipsum dolor sit amet, consectetur.")
+							section.article__tail
+								h2 Заголовок 2 уровня
+								h3 Заголовок 3 уровня
+								h4 Заголовок 4 уровня
+								h5 Заголовок 5 уровня
+								h6 Заголовок 6 уровня
+								p Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Заголовок ты, предупредила за толку моей несколько грустный, рукопись, они предупреждал инициал, родного прямо продолжил строчка! Снова коварных на берегу океана, текстами однажды речью до, собрал по всей, моей вскоре все парадигматическая залетают послушавшись рыбного пунктуация. Составитель ее напоивший несколько по всей коварных диких раз, они лучше страну.
+								p Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Заголовок ты, предупредила за толку моей несколько грустный, рукопись, они предупреждал инициал, #[a(href="") родного] прямо продолжил строчка! Снова коварных на берегу океана, текстами однажды речью до, собрал по всей, моей вскоре все парадигматическая залетают послушавшись рыбного пунктуация. Составитель ее напоивший несколько по всей коварных диких раз, они лучше страну.
+								table
+									thead
+										tr
+											td Колонка 1
+											td Колонка 2
+											td Колонка 3
+									tbody
+										tr
+											td Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, odit.
+											td Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto natus doloribus iste, in dolor obcaecati saepe, ipsum voluptate tenetur illo. Iure quae ipsum itaque necessitatibus quidem similique temporibus perferendis pariatur officiis provident quibusdam quos saepe distinctio quo, earum sit nobis! Minus beatae similique ratione. Reprehenderit iure ducimus, vitae delectus ad voluptatem et velit ipsa est!
+											td
+								ol
+									li Пунтк списка
+									li Пунтк списка
+									li Пунтк списка
+									li Пунтк списка
+									li Пунтк списка
+									li Пунтк списка
+									li Пунтк списка
+
+								ul
+									li Пунтк списка
+									li Пунтк списка
+									li Пунтк списка
+									li Пунтк списка
+									li Пунтк списка
+									li Пунтк списка
+									li Пунтк списка
+
+								img(src="img/_DSC4155.jpg", alt="")
+								img(src="img/_DSC2761.jpg", alt="", width="600")
+								img(src="img/_DSC2761.jpg", alt="", width="400")
+							aside.article__tags
+								span.article__tags-title Tags: 
+								a.article__tags-item(href="") womens
+								a.article__tags-item(href="") grey
+								
+			include _footer
+
+		script(src="js/common.js")
