@@ -60,46 +60,38 @@
           </div>
         </div>
       </header>
-      <main class="main">
+      <div class="main">
         <div class="main__inner">
-          <h1 class="main__title">Blog</h1>
-          <section class="main__blog blog">
-            <ul class="blog__list">
-              <li class="blog__item"><a class="blog__item-inner" href="blog-single.html">
-                  <div class="blog__item-pic" style="background-image: url(img/_DSC2761.jpg)"></div>
-                  <article class="blog__item-content">
-                    <time class="blog__item-date" datetime="2019-02-15 15:58:00">15 февраля, в 15:58</time>
-                    <h2 class="blog__item-title">Lorem ipsum dolor sit amet.</h2>
-                    <p class="blog__item-lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem vitae expedita aut officiis enim voluptas velit, commodi suscipit eum ea.</p>
-                  </article></a></li>
-              <li class="blog__item"><a class="blog__item-inner" href="blog-single.html">
-                  <div class="blog__item-pic" style="background-image: url(img/_DSC7470.jpg)"></div>
-                  <article class="blog__item-content">
-                    <time class="blog__item-date" datetime="2019-02-15 15:58:00">15 февраля, в 15:58</time>
-                    <h2 class="blog__item-title">Lorem ipsum dolor sit amet.</h2>
-                    <p class="blog__item-lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem vitae expedita aut officiis enim voluptas velit, commodi suscipit eum ea.</p>
-                  </article></a></li>
-              <li class="blog__item"><a class="blog__item-inner" href="blog-single.html">
-                  <div class="blog__item-pic" style="background-image: url(img/фото-9577.jpg)"></div>
-                  <article class="blog__item-content">
-                    <time class="blog__item-date" datetime="2019-02-15 15:58:00">15 февраля, в 15:58</time>
-                    <h2 class="blog__item-title">Lorem ipsum dolor sit amet.</h2>
-                    <p class="blog__item-lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem vitae expedita aut officiis enim voluptas velit, commodi suscipit eum ea.</p>
-                  </article></a></li>
-              <li class="blog__item"><a class="blog__item-inner" href="blog-single.html">
-                  <div class="blog__item-pic" style="background-image: url(img/_DSC41271-2.jpg)"></div>
-                  <article class="blog__item-content">
-                    <time class="blog__item-date" datetime="2019-02-15 15:58:00">15 февраля, в 15:58</time>
-                    <h2 class="blog__item-title">Lorem ipsum dolor sit amet.</h2>
-                    <p class="blog__item-lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem vitae expedita aut officiis enim voluptas velit, commodi suscipit eum ea.</p>
-                  </article></a></li>
-            </ul>
-            <nav class="blog__pagination pagination">
-              <div class="pagination__list"><a class="pagination__prev">Предыдущая</a><a class="pagination__item" href="">1</a><span class="pagination__dots">...</span><a class="pagination__item" href="">4</a><span class="pagination__item current">5</span><a class="pagination__item" href="">6</a><span class="pagination__dots">...</span><a class="pagination__item" href="">87</a><a class="pagination__next">Следующая</a></div>
-            </nav>
+          <section class="main__contact">
+            <div class="contact">
+              <div class="contact__wrapp">
+                <div class="contact__left"><img class="contact__ava" src="img/ava.jpg" alt="">
+                  <div class="contact__socials"><a class="contact__socials-item contact__socials-item--phone" href=""></a><a class="contact__socials-item contact__socials-item--mail" href=""></a><a class="contact__socials-item contact__socials-item--facebook" href=""></a><a class="contact__socials-item contact__socials-item--instagram" href=""></a></div>
+                </div>
+                <div class="contact__right">
+                  <p class="contact__title">Contact</p>
+                  <p class="contact__name">Denis Gromov</p>
+                  <form class="contact__form form">
+                    <div class="form__group">
+                      <label class="form__label" for="name">Name</label>
+                      <input class="form__field" type="text" name="name" required id="name">
+                    </div>
+                    <div class="form__group">
+                      <label class="form__label" for="phone">Phone</label>
+                      <input class="form__field" type="text" name="phone" required id="phone">
+                    </div>
+                    <div class="form__group">
+                      <label class="form__label" for="msg">Message</label>
+                      <textarea class="form__field" type="text" name="msg" required rows="5" id="msg"></textarea>
+                    </div>
+                    <button class="form__btn btn">Отправить</button>
+                  </form>
+                </div>
+              </div>
+            </div>
           </section>
         </div>
-      </main>
+      </div>
       <footer class="footer">
         <div class="footer__inner">
           <div class="footer__left">
@@ -122,6 +114,8 @@
         </div>
       </footer>
     </div>
+    <script src="js/jquery.masonry.min.js"></script>
     <script src="js/common.js"></script>
+    <script src="js/common-contacts.js"></script>
   </body>
 </html>

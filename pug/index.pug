@@ -2,7 +2,7 @@ doctype html
 html
 
 	head
-		meta(charset='utf-8')
+		meta(charportfolio='utf-8')
 		title
 		meta(http-equiv='X-UA-Compatible', content='IE=edge')
 		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
@@ -23,60 +23,25 @@ html
 			.main
 				.main__inner
 					.main__portfolio
-						#gamma-container.gamma-container.gamma-loading.portfolio
-							ul.gamma-gallery.portfolio__list
-								li.portfolio__item
-									div(data-alt='img03', data-description=' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius vel impedit fugiat recusandae, magni nam dolore animi itaque nisi, velit porro provident hic. Praesentium tempore eos nam architecto suscipit, velit fugit sit veniam, ducimus at possimus natus eveniet error repudiandae veritatis necessitatibus consequuntur magnam iure, nisi voluptate. Nisi, officia, voluptate.')
-										div(data-src='img/_DSC2299.jpg')
-								li.portfolio__item
-									div(data-alt='img03')
-										div(data-src='img/_DSC2761.jpg')
-								li.portfolio__item
-									div(data-alt='img03', data-description='')
-										div(data-src='img/_DSC2332.jpg')
-								li.portfolio__item
-									div(data-alt='img03', data-description='')
-										div(data-src='img/_DSC2378.jpg')
-								li.portfolio__item
-									div(data-alt='img03', data-description='')
-										div(data-src='img/_DSC4155.jpg')
-								li.portfolio__item
-									div(data-alt='img03', data-description='')
-										div(data-src='img/_DSC7470.jpg')
-								li.portfolio__item
-									div(data-alt='img03', data-description='')
-										div(data-src='img/_DSC7588.jpg')
-								li.portfolio__item
-									div(data-alt='img03', data-description='')
-										div(data-src='img/_DSC41271-2.jpg')
-								li.portfolio__item
-									div(data-alt='img03', data-description='')
-										div(data-src='img/DSCF1249.jpg')
-								li.portfolio__item
-									div(data-alt='img03', data-description='')
-										div(data-src='img/DSCF04901-2.jpg')
-								li.portfolio__item
-									div(data-alt='img03', data-description='')
-										div(data-src='img/фото-2190.jpg')
-								li.portfolio__item
-									div(data-alt='img03', data-description='')
-										div(data-src='img/фото-2318.jpg')
-								li.portfolio__item
-									div(data-alt='img03', data-description='')
-										div(data-src='img/фото-9104.jpg')
-								li.portfolio__item
-									div(data-alt='img03', data-description='')
-										div(data-src='img/фото-9577.jpg')
-							.gamma-overlay.portfolio__overlay
-							//- #loadmore.portfolio__loadmore More
+						.portfolio.portfolio--loading
+							.portfolio__links(aria-hidden="true", style="display: none !important; visibility: hidden")
+								a img/_DSC2378.jpg
+								a img/DSCF1249.jpg
+								a img/_DSC4155.jpg
+								a img/фото-9104.jpg
+								a img/_DSC2378.jpg
+								a img/DSCF1249.jpg
+								a img/_DSC4155.jpg
+								a img/фото-9104.jpg
+								a img/_DSC2378.jpg
+								a img/DSCF1249.jpg
+							.portfolio__list
+							button.portfolio__loadmore.btn More
 			include _footer
 
-		script(src="js/modernizr.custom.70736.js")
+		script(src="js/lightgallery-all.min.js")
 		script(src="js/jquery.masonry.min.js")
-		script(src="js/jquery.history.js")
-		script(src="js/js-url.min.js")
-		script(src="js/jquerypp.custom.js")
-		script(src="js/gamma.js")
+		script(src="js/common.js")
 		script(src="js/common-index.js")
 
 

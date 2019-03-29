@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charportfolio="utf-8">
     <title></title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -21,8 +21,10 @@
     <div class="w-page">
       <header class="header">
         <div class="header__inner">
-          <div class="header__left"><a class="header__logo" href="">Denis Gromov.</a></div>
-          <div class="header__right">
+          <div class="header__left"><a class="header__logo" href="/">Denis Gromov.</a>
+            <button class="header__burger burger js-menuToggle"><span></span><span></span><span></span><span></span><span></span><span></span></button>
+          </div>
+          <div class="header__right"> 
             <div class="header__menu">
               <nav class="menu">
                 <ul class="menu__list">
@@ -48,7 +50,7 @@
                     </ul>
                   </li>
                   <li class="menu__item"><a class="menu__link" href="blog.html">Blog</a></li>
-                  <li class="menu__item"><a class="menu__link" href="">Contacts</a></li>
+                  <li class="menu__item"><a class="menu__link" href="contacts.html">Contacts</a></li>
                 </ul>
               </nav>
             </div>
@@ -61,80 +63,10 @@
       <div class="main">
         <div class="main__inner">
           <div class="main__portfolio">
-            <div class="gamma-container gamma-loading portfolio" id="gamma-container">
-              <ul class="gamma-gallery portfolio__list">
-                <li class="portfolio__item">
-                  <div data-alt="img03" data-description=" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius vel impedit fugiat recusandae, magni nam dolore animi itaque nisi, velit porro provident hic. Praesentium tempore eos nam architecto suscipit, velit fugit sit veniam, ducimus at possimus natus eveniet error repudiandae veritatis necessitatibus consequuntur magnam iure, nisi voluptate. Nisi, officia, voluptate.">
-                    <div data-src="img/_DSC2299.jpg"></div>
-                  </div>
-                </li>
-                <li class="portfolio__item">
-                  <div data-alt="img03">
-                    <div data-src="img/_DSC2761.jpg"></div>
-                  </div>
-                </li>
-                <li class="portfolio__item">
-                  <div data-alt="img03" data-description="">
-                    <div data-src="img/_DSC2332.jpg"></div>
-                  </div>
-                </li>
-                <li class="portfolio__item">
-                  <div data-alt="img03" data-description="">
-                    <div data-src="img/_DSC2378.jpg"></div>
-                  </div>
-                </li>
-                <li class="portfolio__item">
-                  <div data-alt="img03" data-description="">
-                    <div data-src="img/_DSC4155.jpg"></div>
-                  </div>
-                </li>
-                <li class="portfolio__item">
-                  <div data-alt="img03" data-description="">
-                    <div data-src="img/_DSC7470.jpg"></div>
-                  </div>
-                </li>
-                <li class="portfolio__item">
-                  <div data-alt="img03" data-description="">
-                    <div data-src="img/_DSC7588.jpg"></div>
-                  </div>
-                </li>
-                <li class="portfolio__item">
-                  <div data-alt="img03" data-description="">
-                    <div data-src="img/_DSC41271-2.jpg"></div>
-                  </div>
-                </li>
-                <li class="portfolio__item">
-                  <div data-alt="img03" data-description="">
-                    <div data-src="img/DSCF1249.jpg"></div>
-                  </div>
-                </li>
-                <li class="portfolio__item">
-                  <div data-alt="img03" data-description="">
-                    <div data-src="img/DSCF04901-2.jpg"></div>
-                  </div>
-                </li>
-                <li class="portfolio__item">
-                  <div data-alt="img03" data-description="">
-                    <div data-src="img/фото-2190.jpg"></div>
-                  </div>
-                </li>
-                <li class="portfolio__item">
-                  <div data-alt="img03" data-description="">
-                    <div data-src="img/фото-2318.jpg"></div>
-                  </div>
-                </li>
-                <li class="portfolio__item">
-                  <div data-alt="img03" data-description="">
-                    <div data-src="img/фото-9104.jpg"></div>
-                  </div>
-                </li>
-                <li class="portfolio__item">
-                  <div data-alt="img03" data-description="">
-                    <div data-src="img/фото-9577.jpg"></div>
-                  </div>
-                </li>
-              </ul>
-              <div class="gamma-overlay portfolio__overlay"></div>
+            <div class="portfolio portfolio--loading">
+              <div class="portfolio__links" aria-hidden="true" style="display: none !important; visibility: hidden"><a>img/_DSC2378.jpg</a><a>img/DSCF1249.jpg</a><a>img/_DSC4155.jpg</a><a>img/фото-9104.jpg</a><a>img/_DSC2378.jpg</a><a>img/DSCF1249.jpg</a><a>img/_DSC4155.jpg</a><a>img/фото-9104.jpg</a><a>img/_DSC2378.jpg</a><a>img/DSCF1249.jpg</a></div>
+              <div class="portfolio__list"></div>
+              <button class="portfolio__loadmore btn">More</button>
             </div>
           </div>
         </div>
@@ -161,12 +93,9 @@
         </div>
       </footer>
     </div>
-    <script src="js/modernizr.custom.70736.js"></script>
+    <script src="js/lightgallery-all.min.js"></script>
     <script src="js/jquery.masonry.min.js"></script>
-    <script src="js/jquery.history.js"></script>
-    <script src="js/js-url.min.js"></script>
-    <script src="js/jquerypp.custom.js"></script>
-    <script src="js/gamma.js"></script>
+    <script src="js/common.js"></script>
     <script src="js/common-index.js"></script>
   </body>
 </html>

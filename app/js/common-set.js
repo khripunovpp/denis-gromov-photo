@@ -26,6 +26,7 @@ $(function() {
                 gallery.masonry('reload')
                 gallery.data('lightGallery').destroy(true)
                 gallery.lightGallery(galleryOptions)
+                gallery.closest('.set').removeClass(loadingClass)
             }, 10)
         }
     }
@@ -57,7 +58,7 @@ $(function() {
 
         gallery.masonry();
 
-        gallery.closest('.set').removeClass(loadingClass)
+        
 
         if (linksArr.length > loadingItems) gallery.closest('.set').addClass('set--infiniteScroll');
     }
