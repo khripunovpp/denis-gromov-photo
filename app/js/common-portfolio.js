@@ -1,11 +1,14 @@
 $(function() {
-    var gallery = $('.portfolio--notGallery .portfolio__list');
+    var portfolio = $('.portfolio--notGallery'),
+        gallery = portfolio.find('.portfolio__list');
 
-    var $grid = gallery.imagesLoaded(function() {
-        setTimeout(function() {
-            gallery.closest('.portfolio').removeClass('portfolio--loading')
-            $('.portfolio__item').show()
-            $grid.masonry();
-        }, 1000)
+    var grid = gallery.isotope({
+        itemSelector: '.portfolio__item',
+        percentPosition: true,
+        masonry: {
+            columnWidth: '.portfolio__sizer'
+        }
     });
+    
+    portfolio.removeClass('portfolio--loading')
 }())

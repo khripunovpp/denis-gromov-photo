@@ -6,6 +6,8 @@
 	.set
 		&__item
 			padding: 10px
+		&__sizer,
+		&__item
 			width: 50%
 
 @media only screen and (max-width : 991px)
@@ -14,13 +16,41 @@
 		&__logo
 			display: block
 			max-width: 200px
+		&__inner
+			position: relative
 		&__right
-			display: none
+			position: absolute
+			z-index: 2
+			top: 100%
+			left: 0
+			width: 100%
+			display: block
+			transform: translateX(200%)
+			transition: all .2s
+			background-color: #000
+			padding: 15px 15px 20px
+			text-align: center
+			&.opened
+				transform: translateX(0)
 		&__burger
 			display: block
 			position: absolute
-			top: 42px
+			top: 12px
 			right: 12px
+		&__menu
+			margin: 0 0 15px
+		&__menu,
+		&__socials
+			display: block
+
+	.menu
+		&__item
+			display: block
+			&+&
+				margin-left: 0
+				margin-top: 10px
+			ul
+				display: none !important
 
 	.portfolio
 		&__item
@@ -52,9 +82,53 @@
 			margin-top: 10px
 			font-size: 25px
 
+	.contact
+		&__wrapp,
+		&__left,
+		&__right
+			display: block
+		&__left
+			padding: 30px
+		&__right
+			padding: 30px
+		&__socials
+			&-item
+				margin: 0 7px
+
 
 @media only screen and (max-width : 570px)
 	.portfolio,
 	.set
+		&__sizer,
 		&__item
 			width: 100%
+
+	.blog
+		&__item
+			&-inner
+				display: block
+				min-height: auto
+			&-content
+				width: auto
+				padding: 20px
+			&-pic
+				padding-top: 50%
+				width: 100%
+			&+&
+				margin-top: 15px
+			&:nth-child(even)
+				.blog
+					&__item
+						&-inner
+							direction: ltr
+
+	.pagination__prev, 
+	.pagination__next
+		display: table
+		margin: 15px auto
+
+	.article__tail table
+		display: block
+		width: fit-content
+		max-width: 100%
+		overflow-x: auto

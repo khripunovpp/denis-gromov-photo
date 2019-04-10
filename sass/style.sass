@@ -1,7 +1,6 @@
 @import "bourbon"
 @import "icon.sass"
 @import "mixins"
-@import "gamma-gallery.css"
 @import "lightgallery.min.css"
 
 $color: #ffc5ad
@@ -90,6 +89,7 @@ select::-ms-expand
 	display: flex
 	flex-direction: column
 	height: 100%
+	overflow-x: hidden
 
 .header
 	padding: 50px 0 100px
@@ -273,10 +273,11 @@ select::-ms-expand
 	margin: 0 -15px
 	&__list
 		min-height: 25px
+	&__sizer
+		width: 33.3333%
 	&__item
-		width: 33.333333%
+		width: 33.3333%
 		float: left
-		display: none
 		padding: 15px
 		position: relative
 		overflow: hidden
@@ -553,15 +554,17 @@ select::-ms-expand
 			content: ''
 			position: absolute
 			z-index: -1
-			top: -20%
-			left: -20%
+			top: 50%
+			left: 50%
 			width: 120%
 			height: 120%
 			background-image: url(../img/ava.jpg)
 			background-size: cover
 			filter: blur(20px) grayscale(.4)
+			transform: translate(-50%,-50%)
 	&__ava
 		max-width: 250px
+		width: 100%
 		border-radius: 50%
 	&__socials
 		margin-top: 35px
@@ -633,7 +636,9 @@ select::-ms-expand
 
 
 
-
+.lg-outer
+		background-color: #000
+		
 .lg-outer .lg-thumb-item.active, .lg-outer .lg-thumb-item:hover
 	border-color: #800E13
 

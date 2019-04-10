@@ -30,6 +30,5 @@ var isFocus = function() {
 }
 
 $(function() {
-
 	isFocus()
 });
